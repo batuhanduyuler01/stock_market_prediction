@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+	<meta charset="utf-8">
+	<title>Borsa Veri Tahminleme</title>
+</head>
+<body>
+	<h1>Borsa Kağıt Tahminleme Platformuna Hoşgeldiniz</h1>
+	<h2>Uygulama Hakkında:</h2>
+	<p>Bu uygulama tamamen test amaçlı yapılmıştır<br>
+	Asla çoluk çocuğunuzun rızkını bizim lafımızla kağıda yatırın demiyoruz</p><br><br>
+	<h3>Tahminlenecek Kağıt : Garanti</h3>
+	<p>Tahmini kapanış: {{ predict }} </p><br>
+	<p>Yatırım tavsiyesi:</p>
+	{% for item in data %}
+    <p> {{ item }} </p>
+	{% endfor %}
+	
+
+</body>
+</html>
